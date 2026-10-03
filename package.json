@@ -1,0 +1,35 @@
+{
+  "name": "portal",
+  "productName": "Portal",
+  "version": "1.0.0",
+  "description": "A desktop game launcher for your game library",
+  "license": "GPL-3.0-or-later",
+  "author": "thororen1234",
+  "main": "./out/main/index.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "start": "electron-vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json",
+    "build": "npm run typecheck && electron-vite build",
+    "dist": "npm run build && electron-builder"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "electron": "^44.5.1",
+    "electron-builder": "^26.15.3",
+    "electron-vite": "^5.0.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "typescript": "^6.0.3",
+    "vite": "^8.3.2"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4",
+    "steam-session": "^1.9.4",
+    "yaml": "^2.9.1"
+  }
+}

@@ -1,0 +1,12 @@
+appId: com.thororen.portal
+productName: Portal
+directories:
+  output: release
+files:
+  - out/**
+win:
+  target: nsis
+mac:
+  target: dmg
+linux:
+  target: AppImage
